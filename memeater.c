@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 int main(int argc, char** argv) {
     int max = -1;
@@ -16,6 +17,6 @@ int main(int argc, char** argv) {
         mb+=step / 1024 / 1024;
         printf("Allocated %d MB\n", mb);
         sleep(1);
-    }      
+    }
 return 0;
 }
